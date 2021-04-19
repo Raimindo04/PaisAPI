@@ -1,0 +1,89 @@
+
+
+Esta eh uma api desenvolvida em Java, que nos permite  consumir lista de paises no formato XML ou JSON
+
+nesta api podemos:
+=>adicionar Pais.
+	Para adicionar um Pais, envia para o endereco http://env-2913112.cloud.ultimehost.com/api/paises/adiciona 
+	objecto usando o verbo http POST  no seguinte formato:
+	{
+        "nome": "Portugal",
+        "capital": "lisboa",
+        "regiao": "europa",
+        "subRegiao": "região ibérica",
+        "area": 92256.00
+    }
+
+=>actualizar Pais:
+	Para actualizar um Pais, envia para o endereco  http://env-2913112.cloud.ultimehost.com/api/paises/actualiza 
+	objecto usando o verbo http PUT  no seguinte formato:
+
+	{
+		"id": 3,
+        "nome": "Portugal",
+        "capital": "Lisboa",
+        "regiao": "Europa",
+        "subRegiao": "Região Ibérica",
+        "area": 92256.00
+    }
+=>eliminar Pais:
+	Para eliminar um Pais, envia para o endereco  http://env-2913112.cloud.ultimehost.com/api/paises/elimina 
+	objecto usando o verbo http DELETE  no seguinte formato:
+
+	{
+		"id": 3,
+        "nome": "Portugal",
+        "capital": "Lisboa",
+        "regiao": "Europa",
+        "subRegiao": "Região Ibérica",
+        "area": 92256.00
+    }
+=>listar
+	Para listar os Paises, aceda endereco  http://env-2913112.cloud.ultimehost.com/api/paises/lista
+	usando o verbo http GET, sera retornado a lista de Paises  no seguinte formato:
+	[ {
+        "id": 1,
+        "nome": "Brasil",
+        "capital": "Brasilia",
+        "regiao": "America",
+        "subRegiao": "America do Sul",
+        "area": 8510295.91
+    },
+    {
+        "id": 2,
+        "nome": "Angola",
+        "capital": "Luanda",
+        "regiao": "Africa",
+        "subRegiao": "África Central",
+        "area": 1246700.00
+    },
+    {
+        "id": 3,
+        "nome": "Portugal",
+        "capital": "Lisboa",
+        "regiao": "Europa",
+        "subRegiao": "região ibérica",
+        "area": 92256.00
+    }]
+=>ordenar de acordo com o atributo desejado:
+	*para ordenar http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar
+	usando o verbo http GET, sera retornado a lista de Paises ordenados pelo id;	
+	*para para ordenar pelo id de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/desc
+	
+	*para para ordenar pelo nome de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/nome
+	*para para ordenar pelo nome de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/nome/desc
+	
+	*para para ordenar pela capital de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/capital
+	*para para ordenar pela capital de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/capital/desc
+	
+	*para para ordenar pela area de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/area
+	*para para ordenar pela area de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/area/desc
+	
+	*para para ordenar pela regiao de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/regiao
+	*para para ordenar pela regiao de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/regiao/desc
+	
+	*para para ordenar pela subregiao de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subregiao
+	*para para ordenar pela subregiao de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subregiao/desc
+	
+	
+	
