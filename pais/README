@@ -82,8 +82,8 @@ nesta api podemos:
 	*para para ordenar pela regiao de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/regiao
 	*para para ordenar pela regiao de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/regiao/desc
 	
-	*para para ordenar pela subregiao de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subregiao
-	*para para ordenar pela subregiao de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subregiao/desc
+	*para para ordenar pela subregiao de forma crescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subRegiao
+	*para para ordenar pela subregiao de forma decrescente : http://env-2913112.cloud.ultimehost.com/api/paises/lista/ordenar/subRegiao/desc
 	
 	
 	
